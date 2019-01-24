@@ -14,14 +14,14 @@ animals = [
 'cat'
 ]
 
-skip = 3
+skip = 5
 
 def skip_animals(animals, skip)
     @arr = Array.new
     animals.each_with_index { |animal, index| 
-      @arr << animal if index > skip 
+      @arr << "#{index}:#{animal}" if index >= skip  
     }
-    puts @arr
+    return @arr
 end
 
 skip_animals(animals, skip)
