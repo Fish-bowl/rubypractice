@@ -1,0 +1,17 @@
+require "pry"
+
+names = [ nil, "Max","Jacob","John"]
+
+def method(names)
+	names.map do |n|
+	puts n 
+	case n 
+	when n === nil 
+	return 'n is nil'
+	when n === "Max" 
+	return "max"  
+	end 
+	end
+end
+
+method(names)
